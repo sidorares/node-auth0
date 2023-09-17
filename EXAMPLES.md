@@ -28,7 +28,7 @@ const auth = new AuthenticationClient({
   clientSecret: '{YOUR_CLIENT_SECRET}',
 });
 const { data: user } = await auth.database.signUp({
-  user: '{USER_EMAIL}',
+  email: '{USER_EMAIL}',
   password: '{USER_PASSWORD}',
   connection: 'Username-Password-Authentication',
 });
